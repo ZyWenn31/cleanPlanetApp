@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #E0FFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="tserkovnikov.com.cleanplanetapp.controller.UserListController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label style="-fx-font-size: 20; -fx-font-weight: bold;" text="Список пользователей   " />
+            <Button onAction="#onBackClicked" style="-fx-background-color: #00CED1;" text="Назад" textFill="WHITE" />
+            <Button onAction="#updateTable" style="-fx-background-color: #00CED1;" text="Обновить" textFill="WHITE" />
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="userTable" prefHeight="400" prefWidth="800" style="-fx-background-color: #E0FFFF;">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="60" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="150" text="Логин" />
+                <TableColumn fx:id="positionColumn" prefWidth="100" text="Позиция" />
+                <TableColumn fx:id="passwordColumn" prefWidth="80" text="Пароль" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+            <Button onAction="#onAddPartner" style="-fx-background-color: #00CED1;" text="Добавить" textFill="WHITE" />
+            <Button onAction="#onDeletePartner" style="-fx-background-color: #00CED1;" text="Удалить" textFill="WHITE" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
+

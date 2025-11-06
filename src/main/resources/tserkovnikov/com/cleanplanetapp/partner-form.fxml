@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-padding: 20; -fx-background-color: #E0FFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="tserkovnikov.com.cleanplanetapp.controller.PartnerFormController">
+
+    <Label fx:id="formTitle" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Добавление партнёра" />
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Наименование:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Тип партнёра:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <ComboBox fx:id="typeComboBox" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Рейтинг:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="ratingField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Адрес:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="addressField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="ФИО руководителя:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="directorField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label text="Телефон:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#onSave" style="-fx-background-color: #00CED1;" text="Сохранить" textFill="WHITE" />
+        <Button onAction="#onCancel" style="-fx-background-color: #00CED1;" text="Отмена" textFill="WHITE" />
+    </HBox>
+</VBox>

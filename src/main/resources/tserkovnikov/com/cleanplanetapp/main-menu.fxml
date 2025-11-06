@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane style="-fx-background-color: #E0FFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="tserkovnikov.com.cleanplanetapp.controller.MainController">
+    <top>
+        <Label style="-fx-font-size: 22; -fx-font-weight: bold; -fx-padding: 10;" text="Система управления партнерами">
+         <font>
+            <Font name="Oriya Sangam MN" size="12.0" />
+         </font></Label>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="218.0" prefWidth="350.0" spacing="15" style="-fx-background-color: #E0FFFF;">
+            <Button onAction="#onOpenPartners" prefWidth="250" style="-fx-background-color: #00CED1;" text="Работа с партнёрами" textFill="WHITE" fx:id="partnerBtn"/>
+            <Button onAction="#onOpenUsers" prefWidth="250" style="-fx-background-color: #00CED1;" text="Управление пользователями" textFill="WHITE" visible="false" fx:id="userBtn"/>
+            <Button onAction="#onExit" prefWidth="250" style="-fx-background-color: #00CED1;" text="Выход" textFill="WHITE" />
+        </VBox>
+    </center>
+</BorderPane>
